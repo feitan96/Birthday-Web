@@ -1,0 +1,61 @@
+html {
+  background: #850000;
+  font-family: "Dancing Script", cursive;
+  font-size: larger;
+}
+
+body {
+  color: #fff6c3;
+  display: flex; /* add this */
+  justify-content: center; /* add this */
+  align-items: center; /* add this */
+  height: 100vh; /* add this */
+  padding-left: 10px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+p{
+  padding-top: 10px;
+}
+
+.btn {
+  background-color: #850000;
+  color: #fff6c3;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5%;
+  position: absolute; /* add this */
+  top: 50%; /* add this */
+  left: 50%; /* add this */
+  transform: translate(-50%, -50%); /* add this */
+}
+
+
+.btn:hover {
+  background-color: #fff6c3;
+  color: #850000;
+}
+
+@keyframes popin {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.popin {
+  animation: popin 2s ease-out;
+}
